@@ -19,35 +19,83 @@
                 <input type="text" placeholder="Telefone, nome de usuário ou email" />
                 <input type="password" placeholder="Senha" />
                 <button id="login"><a href="https://www.facebook.com">Entrar</a></button>
-                <hr><span id="OU">ou</span>
-                <span>Entrar com o Facebook</span>
+                
+                <div class="OU">
+                    <ul>
+                        <li>
+                            <hr/>
+                        </li>
+                        <li>
+                            <Span>OU</Span>
+                        </li>
+                        <li>
+                            <hr/>
+                        </li>
+                    </ul>            
+                </div>
+
+                <ul class="face">
+                    <li>
+                        <img class="faceLogo" src="img/face.svg" />
+                    </li>
+                    <li>
+                        <span>Entrar com o Facebook </span>
+                    </li>
+                </ul>
                 <a id="forget">Esqueceu a senha?</a>
             </form>
             <br>
-            <form >    
-                <span>Não tem conta ? <span id="cadastrar">Cadastre-se</span></a></span>
+            <form>
+                <span id="cadastrar">Não tem conta ? <span id="cadastrar_link">Cadastre-se</span></span>
             </form>
-            <span id="app">Obtenha o aplicativo.</span>
-            <img id="apps" src="img/play_store.png" alt="">
-            <img id="apps" src="img/microsoft.png" alt="">
+            <div class="app">
+                <span>Obtenha o aplicativo.</span>
+                <div class="lojas">
+                    <ul>
+                        <li>
+                            <img src="img/play_store.png" />
+                        </li>
+                        <li>
+                            <img src="img/microsoft.png" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
         <div>
             <ul>
-                <li>Português (Brasil)</li>
-                <li>English (US)</li>
-                <li>Español</li>
-                <li>Français (France)</li>
-                <li>Italiano</li>
-                <li>Deutsh</li>
-                <li>العربية</li>
-                <li>हिन्दी</li>
-                <li>中文(简体)</li>
-                <li>日本語</li>
-                <li><a href="#"><button class="mais">+</button></a></li>
+                <li>Meta</li>
+                <li>Sobre</li>
+                <li>Blog</li>
+                <li>Carreiras</li>
+                <li>Ajuda</li>
+                <li>API</li>
+                <li>Privacidade</li>
+                <li>Termos</li>
+                <li>Localização</li>
+                <li>Instagram Lite</li>
+                <li>Threads</li>
+                <li>Carregamento de contatos e não usuários</li>
+                <li>Meta Verified</li>
+                <!-- <li><a href="#"><button class="mais">+</button></a></li> -->
             </ul>
-            <p id="copyright">Meta © 2023</p>
+            <ul class="copyright">
+                <li>
+                    <label class="label" for="language"></label>
+                    <select id="language">
+                        <option value="en">Português (Brasil)</option>
+                        <option value="es">Español</option>
+                        <option value="pt">English</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                    </select>
+                </li>
+                <li>
+                    <p>© 2024 Instagram from Meta</p>
+                </li>
+            </ul>
         </div>
     </footer>
 </body>
