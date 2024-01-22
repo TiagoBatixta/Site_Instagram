@@ -1,16 +1,22 @@
-const imgs = document.getElementById("img");
-const img = document.querySelectorAll("#img img");
+let time = 1000,
+    currentlmagelndex = 0,
+    Images = document.querySelectorAll("#phones img")
+    max = Images.length;
 
-let idx = 0;
+    function nextlmage() {
 
-function carrosell(){
-    idx++;
+        Images[currentlmagelndex].classList.remove("selected")
 
-    if(idx > img.length - 1){
-        idx = 0;
+        currentlmagelndex++
+
+        if(currentlmagelndex >= max)
+        currentlmagelndex=0
+
+        Images [currentlmagelndex].classList.add("selected")
+        
+
     }
-
-    imgs.style.transform = `translateX(${-idx * 500}px)`;
-}
-
-setInterval(carrosell, 1800);
+    
+    function start(){
+        window.addEventListener(" load", start)
+    }

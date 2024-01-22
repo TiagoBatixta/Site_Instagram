@@ -61,6 +61,32 @@ form span {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* Trabalhando imagem dos phones */
+
+.phonePrincipal {
+position: absolute;
+margin-right: 425px;
+}
+
+
+#phones{
+    position: relative;
+    margin-top: 50px;
+    padding-left: 58px;
+    margin-top: 25px;
+    /* opacity: 0; */
+}
+
+#phones img{
+    position: absolute;
+    object-fit: cover;
+    transition: opacity 800ms; 
+}
+
+#phones img.selected{
+    opacity: 1;
+}
+
 input {
     height: 40px;
     width: 90%;
