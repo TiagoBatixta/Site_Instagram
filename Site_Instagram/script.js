@@ -1,22 +1,19 @@
-let time = 1000,
-    currentlmagelndex = 0,
-    Images = document.querySelectorAll("#phones img")
-    max = Images.length;
+let time = 20;
+    currentlmagelndex = 0;
+    images = document.querySelectorAll("#phones img");
+    max = images.length;
 
-    function nextlmage() {
+function nextlmage() {
+    images[currentlmagelndex].classList.remove("selected");
+    currentlmagelndex++;
+    if (currentlmagelndex >= max)
+        currentlmagelndex = 0;
+    images[currentlmagelndex].classList.add("selected");
+}
 
-        Images[currentlmagelndex].classList.remove("selected")
-
-        currentlmagelndex++
-
-        if(currentlmagelndex >= max)
-        currentlmagelndex=0
-
-        Images [currentlmagelndex].classList.add("selected")
-        
-
-    }
-    
-    function start(){
-        window.addEventListener(" load", start)
-    }
+function start() {
+    setInterval(() => {
+        nextlmage();
+    }, time)
+}
+window.addEventListener("load", start);
